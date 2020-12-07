@@ -201,9 +201,6 @@ nav {
   align-items: center; }
   .background-browse > div {
     position: relative; }
-  @media (min-width: 1024px) {
-    .background-browse {
-      height: 100%; } }
 
 .browse-container {
   width: 100%;
@@ -228,7 +225,7 @@ nav {
       .browse-container .recipes {
         display: flex;
         flex-direction: column; } }
-    @media (min-width: 600px) {
+    @media (min-width: 600px) and (max-width: 768px) {
       .browse-container .recipes {
         display: block; } }
     .browse-container .recipes .pizza-recipe {
