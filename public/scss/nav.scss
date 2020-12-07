@@ -19,6 +19,9 @@ nav{
     .brand{
         float:left;
         margin-left:50px;
+        @media (max-width: 500px) {
+            margin-left:0px;
+        }
 
     }
 

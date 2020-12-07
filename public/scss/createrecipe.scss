@@ -6,6 +6,10 @@
     margin-left:15px;
 
   }
+  @media(min-width:600px ){
+    text-align:center;
+    margin-left:0px;
+}
 
   h3{
     font-family:"Lato";
@@ -37,6 +41,9 @@
     @media(max-width: 500px){
       width:283px;
     }
+    @media(min-width:600px ){
+     width:558px;
+  }
   }
   
   .caveat{
@@ -57,6 +64,9 @@
   
   @media(max-width: 500px){
     margin-left:10px;
+  }
+  @media(min-width:600px ){
+    margin:0;
   }
     .createButton {
     margin-bottom:150px;
@@ -114,20 +124,45 @@
   display:grid;
   grid-template-columns:7% 1fr 1fr;
   grid-gap:30px;
+  @media(max-width: 500px){
+    grid-template-columns:7% 1fr;
+  }
+  @media(min-width:600px ) and (max-width:768px){
+    margin-right:0px;
+    grid-template-columns: 14% 1fr;
+  }
     .section-heading{
       margin-top:36px;
       width:400px;
       margin-left:-128px;
+      @media(max-width: 500px){
+        margin-left:-182px;
+        font-size:20px;
+        margin-top:0px;
+      }
+      @media(min-width:600px )and (max-width:768px){
+        margin-left:-86px;
+      }
     
     .rotate{
       transform:rotate(-90deg);
       font-weight:100;
       font-size:25px;
       letter-spacing:1px;
+      @media(max-width: 500px){
+        font-size:20px;
+      }
     }
   }
 }
 .section-text{
+  @media(min-width:600px )and (max-width:768px){
+    margin-left:136px;
+  } 
+  @media(max-width: 500px){
+    margin-left:48px;
+  }
+ 
     h3{
       margin-top:50px;
       font-size:20px;
@@ -151,6 +186,11 @@
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  @media(max-width: 500px){
+    width:251px;
+    height:226px;
+    margin-left:14px;
+  }
 
 }
 
@@ -158,6 +198,12 @@
   margin-top:80px;
   letter-spacing:2px;
   margin-left:110px;
+  @media(min-width:600px )and (max-width:768px){
+    margin-left:0px;
+  }
+  @media(max-width: 500px){
+    margin-left:0px;
+  }
 
   h2{
     margin-bottom:40px;

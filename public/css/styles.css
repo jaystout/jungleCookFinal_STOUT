@@ -46,6 +46,9 @@ nav {
   nav .brand {
     float: left;
     margin-left: 50px; }
+    @media (max-width: 500px) {
+      nav .brand {
+        margin-left: 0px; } }
   nav .links {
     margin-right: 50px;
     float: right; }
@@ -198,6 +201,9 @@ nav {
   align-items: center; }
   .background-browse > div {
     position: relative; }
+  @media (min-width: 1024px) {
+    .background-browse {
+      height: 100%; } }
 
 .browse-container {
   width: 100%;
@@ -222,6 +228,9 @@ nav {
       .browse-container .recipes {
         display: flex;
         flex-direction: column; } }
+    @media (min-width: 600px) {
+      .browse-container .recipes {
+        display: block; } }
     .browse-container .recipes .pizza-recipe {
       display: flex;
       margin-top: 60px; }
@@ -323,6 +332,10 @@ nav {
   @media (max-width: 500px) {
     .createSection {
       margin-left: 15px; } }
+  @media (min-width: 600px) {
+    .createSection {
+      text-align: center;
+      margin-left: 0px; } }
   .createSection h3 {
     font-family: "Lato";
     font-size: 20px;
@@ -345,6 +358,9 @@ nav {
     @media (max-width: 500px) {
       .createSection input[type=text] {
         width: 283px; } }
+    @media (min-width: 600px) {
+      .createSection input[type=text] {
+        width: 558px; } }
   .createSection .caveat {
     font-size: 25px;
     font-family: "Caveat";
@@ -359,6 +375,9 @@ nav {
   @media (max-width: 500px) {
     .create-button-group {
       margin-left: 10px; } }
+  @media (min-width: 600px) {
+    .create-button-group {
+      margin: 0; } }
   .create-button-group .createButton {
     margin-bottom: 150px;
     margin-top: 100px;
@@ -400,15 +419,41 @@ nav {
   display: grid;
   grid-template-columns: 7% 1fr 1fr;
   grid-gap: 30px; }
+  @media (max-width: 500px) {
+    .grid {
+      grid-template-columns: 7% 1fr; } }
+  @media (min-width: 600px) and (max-width: 768px) {
+    .grid {
+      margin-right: 0px;
+      grid-template-columns: 14% 1fr; } }
   .grid .section-heading {
     margin-top: 36px;
     width: 400px;
     margin-left: -128px; }
+    @media (max-width: 500px) {
+      .grid .section-heading {
+        margin-left: -182px;
+        font-size: 20px;
+        margin-top: 0px; } }
+    @media (min-width: 600px) and (max-width: 768px) {
+      .grid .section-heading {
+        margin-left: -86px; } }
     .grid .section-heading .rotate {
       transform: rotate(-90deg);
       font-weight: 100;
       font-size: 25px;
       letter-spacing: 1px; }
+      @media (max-width: 500px) {
+        .grid .section-heading .rotate {
+          font-size: 20px; } }
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .section-text {
+    margin-left: 136px; } }
+
+@media (max-width: 500px) {
+  .section-text {
+    margin-left: 48px; } }
 
 .section-text h3 {
   margin-top: 50px;
@@ -432,11 +477,22 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 500px) {
+    .section-image {
+      width: 251px;
+      height: 226px;
+      margin-left: 14px; } }
 
 .view-ingredients, .view-instructions {
   margin-top: 80px;
   letter-spacing: 2px;
   margin-left: 110px; }
+  @media (min-width: 600px) and (max-width: 768px) {
+    .view-ingredients, .view-instructions {
+      margin-left: 0px; } }
+  @media (max-width: 500px) {
+    .view-ingredients, .view-instructions {
+      margin-left: 0px; } }
   .view-ingredients h2, .view-instructions h2 {
     margin-bottom: 40px; }
 
@@ -525,11 +581,44 @@ footer {
   background-color: #FFD972;
   font-family: "Lato"; }
 
+@media (max-width: 500px) {
+  .container-wrapper {
+    height: auto; } }
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .container-wrapper {
+    height: auto; } }
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (max-width: 500px) {
+  .container > div {
+    display: initial; } }
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; } }
+
 .container h2 {
   font-size: 30px;
   letter-spacing: 3px;
   font-weight: 400;
   margin-top: 0px; }
+
+@media (max-width: 500px) {
+  .container .leftsection {
+    margin-top: 90px; } }
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .container .leftsection {
+    margin-top: 80px; } }
 
 .container .leftsection input[type=text] {
   width: 250px;
@@ -541,6 +630,9 @@ footer {
   margin-bottom: 16px;
   resize: vertical;
   background-color: #FFD972; }
+  @media (max-width: 500px) {
+    .container .leftsection input[type=text] {
+      width: 206; } }
 
 .container .leftsection .login {
   margin: 0 auto; }
@@ -558,6 +650,9 @@ footer {
 
 .container .rightsection .signup {
   margin-bottom: 10px; }
+  @media (max-width: 500px) {
+    .container .rightsection .signup {
+      text-align: center; } }
 
 .container .rightsection .italic {
   font-style: italic;
@@ -577,3 +672,6 @@ footer {
   font-family: 'Caveat';
   box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer; }
+  @media (max-width: 500px) {
+    .container .signupButton, .container .loginButton {
+      margin-bottom: 100px; } }
