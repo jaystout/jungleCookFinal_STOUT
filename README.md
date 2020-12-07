@@ -1,4 +1,4 @@
-# # Jungle Cook Final (Jaymee Stout)
+## Jungle Cook Final (Jaymee Stout)
 This is a project that I made for my NEWM-N315 class. It's a CRUD application with responsive views where a user can sign up, login, logout, and create and view a recipe. The name of the website is called Jungle Cook. There was an issue with getting the functionality of being able to edit, so you can view the page by clicking on "recipes by category" on the footer. Likewise, the "your recipes" page styles can be seen on the "your recipes" link in the footer. Those were my biggest challenges and I couldn't get them to work, but you can see they were made. 
 
 ## How to view
