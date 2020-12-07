@@ -1,0 +1,61 @@
+#footer {
+    padding: 0 30px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    font-family:'Lato', san-serif;
+    font-style:italic;
+    color:#393939;
+}
+footer { 
+    height:50px;
+    display:flex;
+    align-items: center;
+    letter-spacing:.1em;
+    justify-content: space-between;
+    font-size: 15px;
+    @media (max-width:990px){
+        font-size: 10px;
+    }
+    @media (max-width:640px){
+        flex-direction: column-reverse;
+        >div {
+            padding: 5px 0;
+        }
+    }
+    .brand{
+    }
+
+    .menu{
+        text-align: center;
+        a{
+            padding-right:18px;
+            text-decoration:none;
+            color:#393939;
+            padding: 5px;
+            white-space: nowrap;
+            display: inline-block;
+        }
+    }
+
+    .icons{
+        a { 
+            &:first-child{
+                margin-right:40px;
+                @media (max-width: 990px){
+                    margin-right: 20px;
+                }
+            }
+            img{
+                width:19px;
+                height:19px;
+                color:#393939;
+                
+            }
+        }
+    }
+
+
+
+}
+

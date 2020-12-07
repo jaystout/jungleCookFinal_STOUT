@@ -1,0 +1,47 @@
+* {
+    box-sizing:border-box;
+  
+}
+html, body{
+    font-family: 'Inter',arial, helvetica;
+    margin:0;
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+.heading{
+    font-weight:bold;
+    font-size:40px;
+    padding:0 0 30px;
+
+}
+
+.container {
+    &-wrapper {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    display:flex;
+    height:100%;
+    > div {
+        flex: 1;
+        display:flex;
+        align-items: center;        
+    }
+    .leftsection{
+        >div {
+            padding: 40px;
+            font-size: 20px;
+        }
+    }
+    .rightsection {
+        .banner-image {
+            width: 100%;
+        }
+    }
+}       
+
+

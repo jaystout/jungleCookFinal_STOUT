@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\finalprep"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "finaltest"
+	}
+}

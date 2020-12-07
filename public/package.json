@@ -1,0 +1,15 @@
+{
+  "name": "viewinjection",
+  "version": "0.1.0",
+  "description": "This is a example of injecting ",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile:sass": "node-sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "Jaymee",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,111 @@
+.background-center-content{
+    height:100%;
+    background-image: url(../assets/hero.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(242, 92, 84, 0.6),
+        rgba(242, 92, 84, 0.6)), 
+         url(../assets/hero.jpg);
+         background-position:center;
+         background-repeat: no-repeat;
+         background-size:cover;
+         display:flex;
+         justify-content:center;
+         align-items:center;
+         //flex-direction:column;
+         //justifies ALL of the content inside, doesn't care about one class or all different
+    > div {
+        position: relative;
+    }
+}
+.callout{
+    position:relative;
+    width:400px;
+    height:400px;
+    background-color:#FFD972;
+    margin: auto; //margin auto only does it to one class
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:#000;
+    border-radius:100%;
+    font-family:'Caveat';
+    z-index:2;
+
+    p{
+        text-align:center;
+        font-family:'Lato', sans-serif;
+        margin-bottom:0px;
+        padding:20px;
+        width:62%;
+        
+    }
+
+    
+
+}
+.circle{
+    padding-left:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    position:absolute;//absolute positioned within relative, fixed positioned in browser
+    width:168px;
+    height:168px;
+    background-color:#FCBCB8;
+    border-radius:50%;
+    top:-16px;
+    right:-87px;
+    z-index:1;
+    p{
+        font-style:italic;
+    }
+  
+}
+.callout2{
+    width:400px;
+    height:300px;
+    background-color:aquamarine;
+    margin:auto;
+//margin auto only does it to one class
+}
+
+
+
+//media query
+
+@media all and (max-width: 960px){
+.background-center-content{
+    //flex-direction:column;
+}
+}
+
+@media all and (max-width: 500px){
+.background-center-content{
+
+    .callout{
+        width:258px;
+        height:258px;
+        
+        h1{
+            font-size:17px;
+        }
+        p{
+            font-size:9px;
+        }
+    }
+
+    .circle{
+        width:121px;
+        height:121px;
+        top:-62px;
+        right:-23px;
+        font-size:8px;
+        p{
+            margin-right:32px;
+        }
+    }
+}
+}
